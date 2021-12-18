@@ -4,3 +4,5 @@ class LinkedList {
     this.next = next === undefined ? null : next;
   }
 }
+
+module.exports = LinkedList;
