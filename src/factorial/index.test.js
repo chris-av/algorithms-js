@@ -1,5 +1,4 @@
-const factorial = require('../utils/functions/factorial');
-
+const factorial = require('./');
 
 describe('testing the generic factorial function', () => {
 

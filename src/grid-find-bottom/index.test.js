@@ -1,4 +1,4 @@
-const findBottom = require('../utils/functions/grid-find-bottom');
+const findBottom = require('./');
 
 describe('test the grid-find-bottom function', () => {
   let arr1 = [

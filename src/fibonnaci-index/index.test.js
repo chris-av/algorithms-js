@@ -1,4 +1,4 @@
-const fibonnaci = require('../utils/functions/fibonnaci-index');
+const fibonnaci = require('./');
 
 describe('test fibonnaci', () => {
 

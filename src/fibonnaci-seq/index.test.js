@@ -1,4 +1,4 @@
-const fibonnaci = require('../utils/functions/fibonnaci-seq');
+const fibonnaci = require('./');
 
 
 describe('testing fibonnaci sequence', () => {

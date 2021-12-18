@@ -1,4 +1,4 @@
-const nlargestK = require('../utils/functions/nlargest-k');
+const nlargestK = require('./');
 
 
 describe('testing nlargest-k function', () => {

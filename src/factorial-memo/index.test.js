@@ -1,4 +1,4 @@
-const factorialMemo = require('../utils/functions/factorial-memo');
+const factorialMemo = require('./');
 
 describe('testing the memoized factorial function', () => {
 

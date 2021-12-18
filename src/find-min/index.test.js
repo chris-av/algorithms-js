@@ -1,4 +1,4 @@
-const findMin = require('../utils/functions/find-min');
+const findMin = require('./');
 
 describe('testing the find minimum function', () => {
 
