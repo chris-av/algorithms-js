@@ -1,6 +1,5 @@
 const addLinkedList = require('./');
-const util = require('util');
-const LinkedList = require('../../utils/LinkedList');
+const LinkedList = require('@utils/LinkedList');
 
 describe('adding LinkedLists together', () => {
 
