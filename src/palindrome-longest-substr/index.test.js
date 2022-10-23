@@ -7,10 +7,9 @@ describe('test longest substring palindrome', () => {
     expect(result).toBe('aba');
   });
 
-  // this fails ?? 
-  test('ghnnd -> nn', () => {
-    const result = longestPalindrome('ghnnd');
-    expect(result).toBe('nn');
+  test('ghnnnd -> nn', () => {
+    const result = longestPalindrome('ghnnnd');
+    expect(result).toBe('nnn');
   });
 
   test('raceccar -> racecar', () => {
