@@ -7,7 +7,7 @@ describe('adding LinkedLists together', () => {
     let list1 = new LinkedList(5).add(5).add(5);
     let list2 = new LinkedList(5).add(5).add(5);
     const test = addLinkedList(list1, list2);
-    const testResult = new LinkedList(1).add(1).add(1).add(0);
+    const testResult = new LinkedList(0).add(1).add(1).add(1);
     expect(test).toEqual(testResult);
   });
 
@@ -15,7 +15,7 @@ describe('adding LinkedLists together', () => {
     let list1 = new LinkedList(3).add(2);
     let list2 = new LinkedList(7);
     const test = addLinkedList(list1, list2);
-    const testResult = new LinkedList(3).add(0)
+    const testResult = new LinkedList(0).add(3)
     expect(test).toEqual(testResult);
   });
 
