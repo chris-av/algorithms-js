@@ -25,7 +25,7 @@ export default class LinkedList {
       currNode = currNode.next;
     }
 
-    currNode.next = new LinkedList(data, null);
+    currNode.next = new LinkedList(data);
 
     return this;
 
