@@ -18,7 +18,7 @@ export default class LinkedList {
   }
 
   add(data: Data) {
-    if (this.data == undefined) { this.data = data; return this; }
+    if (this.data === null) { this.data = data; return this; }
     let currNode: LinkedList = this;
 
     while (currNode.next) {
