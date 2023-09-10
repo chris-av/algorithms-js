@@ -42,10 +42,6 @@ export default function(list1: LinkedList, list2: LinkedList) {
 
     if (currNode1 !== null) currNode1 = currNode1.next;
     if (currNode2 !== null) currNode2 = currNode2.next;
-    if (currNode1 !== null || currNode2 !== null) {
-      currNew.next = new LinkedList(0);
-      currNew = currNew.next;
-    }
 
   }
 
