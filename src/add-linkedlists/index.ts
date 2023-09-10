@@ -48,5 +48,6 @@ export default function(list1: LinkedList, list2: LinkedList) {
   if (carryOver > 0) { currNew.add(carryOver); }
 
   return newList;
+
 }
 
