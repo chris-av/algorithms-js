@@ -12,8 +12,8 @@ type Next = LinkedList | null;
 export default class LinkedList {
   data: Data;
   next: Next;
-  constructor(data?: Data, next: Next = null) {
-    this.data = data ? data : null;
+  constructor(data?: Data, next?: Next) {
+    this.data = data === undefined ? null : data;
     this.next = (next === undefined ? null : next);
   }
 
