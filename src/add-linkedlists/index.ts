@@ -31,7 +31,7 @@ export default function(list1: LinkedList, list2: LinkedList) {
 
     if (sum >= 10) {
       // if sum is >=10, then keep the ones digit and add the tens digit to the next one
-      let tmp = (""+sum).split('');
+      let tmp = sum.toString().split('');
       carryOver = parseInt(tmp[0]);
       finalKeep = parseInt(tmp[1]);
       currNew.data = finalKeep;
