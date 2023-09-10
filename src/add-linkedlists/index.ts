@@ -34,10 +34,10 @@ export default function(list1: LinkedList, list2: LinkedList) {
       let tmp = sum.toString().split('');
       carryOver = parseInt(tmp[0]);
       finalKeep = parseInt(tmp[1]);
-      currNew.data = finalKeep;
+      currNew.add(finalKeep);
     } else {
       finalKeep = sum;
-      currNew.data = finalKeep;
+      currNew.add(finalKeep);
     }
 
     if (currNode1 !== null) currNode1 = currNode1.next;
@@ -49,7 +49,7 @@ export default function(list1: LinkedList, list2: LinkedList) {
 
   }
 
-  if (carryOver > 0) { currNew.next = new LinkedList(carryOver); }
+  if (carryOver > 0) { currNew.add(carryOver); }
 
   return newList;
 }
