@@ -31,5 +31,21 @@ export default class LinkedList {
 
   }
 
+  print() {
+    let i = 0;
+    let currNode: LinkedList = this;
+    console.log(`${i} --> ${currNode.data}`);
+
+
+    while (currNode.next) {
+      i++;
+      currNode = currNode.next;
+      console.log(`${i} --> ${currNode.data}`);
+    }
+
+    return this;
+
+  }
+
 }
 
