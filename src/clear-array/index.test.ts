@@ -42,5 +42,10 @@ describe("clear array", () => {
     const result = clearArray(testArr);
     expect(result).toBe(19);
   });
+  test("array that is not ordered", () => {
+    const testArr = [2, 1, 1];
+    const result = clearArray(testArr);
+    expect(result).toBe(3);
+  });
 });
 
