@@ -2,6 +2,11 @@ import clearArray from './';
 
 
 describe("clear array", () => {
+  test("empty array", () => {
+    const testArr: number[] = [];
+    const result = clearArray(testArr);
+    expect(result).toBe(0);
+  });
   test("simple array", () => {
     const testArr = [1, 1, 1];
     const result = clearArray(testArr);
