@@ -17,6 +17,11 @@ describe("clear array", () => {
     const result = clearArray(testArr);
     expect(result).toBe(0);
   });
+  test("single element", () => {
+    const testArr = [7];
+    const result = clearArray(testArr);
+    expect(result).toBe(7);
+  });
   test("simple array", () => {
     const testArr = [1, 1, 1];
     const result = clearArray(testArr);
