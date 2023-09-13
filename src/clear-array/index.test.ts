@@ -7,6 +7,16 @@ describe("clear array", () => {
     const result = clearArray(testArr);
     expect(result).toBe(0);
   });
+  test("all zeros", () => {
+    const testArr: number[] = [0, 0, 0];
+    const result = clearArray(testArr);
+    expect(result).toBe(0);
+  });
+  test("all zeros", () => {
+    const testArr: number[] = [0];
+    const result = clearArray(testArr);
+    expect(result).toBe(0);
+  });
   test("simple array", () => {
     const testArr = [1, 1, 1];
     const result = clearArray(testArr);
