@@ -23,7 +23,7 @@ export default function firstLowestInteger(array: number[]) {
 
 
 // optimal solution according to the internet
-export function alternate(array: number[]) {
+export function optimal(array: number[]) {
   // use the given array to store information
   
   const n = array.length;
