@@ -1,4 +1,35 @@
-export default function clearArray(arr: number[]): number {
+// courtesy of my friend Reid, who thought of a way to walk the array only once
+function constantSolution(arr: number[]): number {
+  if (arr.length === 0) { return 0; }
+
+  let sum = 0;
+  let decr = 0;
+  let i = 0;
+
+  while (i < arr.length - 1) {
+    sum = sum + arr[i];
+    decr = decr + arr[i];
+
+    if (arr[i+1] - decr >= 0) {
+      arr[i+1] = arr[i+1] - decr;
+      arr[i] = 0;
+    } else {
+      decr = 0;
+    }
+
+    i++;
+
+  }
+
+  sum = sum + arr[i];
+
+  return sum;
+
+}
+
+
+// my solution, more naive
+function clearArray(arr: number[]): number {
   let sum = 0;
   let currIndx = 0;
 
@@ -38,3 +69,6 @@ export default function clearArray(arr: number[]): number {
   return sum;
 
 }
+
+export default constantSolution;
+
